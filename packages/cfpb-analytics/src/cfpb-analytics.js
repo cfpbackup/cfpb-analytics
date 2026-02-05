@@ -86,7 +86,6 @@ function analyticsSendEvent(payload) {
         payload.eventCallback &&
         typeof payload.eventCallback === 'function'
       ) {
-         
         payload.eventCallback();
       }
     });

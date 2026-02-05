@@ -22,14 +22,14 @@
     "packages/*"
   ],
   "devDependencies": {
-    "eslint": "^9.30.1",
+    "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-jsdoc": "^51.3.4",
-    "globals": "^16.3.0",
+    "eslint-plugin-jsdoc": "^62.5.2",
+    "globals": "^17.3.0",
     "jest": "^30.0.4",
     "jest-environment-jsdom": "^30.0.4",
-    "prettier": "^3.6.2"
+    "prettier": "^3.8.1"
   },
   "scripts": {
     "jest": "yarn node --experimental-vm-modules $(yarn bin jest packages/**/*.spec.js)",
