@@ -23,7 +23,7 @@ If you are tasked with this update, the process will be:
 10. Open a new PR in repos that use this package
     (such as [consumerfinance.gov](https://github.com/cfpb/consumerfinance.gov)
     and the [design-system](https://github.com/cfpb/design-system))
-    and bump `@cfpb/browserslist-config`. The commmand `yarn upgrade-interactive --latest` can often be used.
+    and bump `@cfpb/browserslist-config`. The commmand `yarn upgrade-interactive` can often be used.
 11. Update any relevant docs, such as the list on
     https://github.com/cfpb/consumerfinance.gov/blob/main/docs/browser-support.md.
     You may need to manually temporarily adjust the cutoff in the project's
