@@ -1,5 +1,7 @@
+#!/bin/bash
+
 ## Run prettier. See ignored path in .prettierignore.
-yarn prettier "./**/*.{js,jsx,ts,tsx,md,css,less}" --write
+yarn exec prettier "./**/*.{js,jsx,ts,tsx,md,css,scss}" --write
 
 ## Run JS linting. See ignored path in .eslintignore.
-yarn eslint ./{.,packages} --fix
+yarn exec eslint ./{.,packages} --fix

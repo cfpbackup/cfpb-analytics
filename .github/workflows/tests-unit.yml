@@ -14,13 +14,17 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v4
 
+      - name: Enable Corepack
+        shell: bash
+        run: corepack enable
+
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 26
 
       - name: Install dependencies with Yarn
         run: yarn install
 
       - name: Run unit tests
-        run: yarn jest
+        run: yarn test
