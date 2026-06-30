@@ -1,3 +1,5 @@
+import { vi } from 'vitest';
+
 describe('cfpb-analytics', () => {
   let analyticsSendEvent;
   beforeEach(() => {
