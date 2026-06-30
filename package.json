@@ -22,19 +22,19 @@
     "packages/*"
   ],
   "devDependencies": {
-    "eslint": "^9.39.2",
-    "eslint-config-prettier": "^10.1.5",
+    "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-jsdoc": "^62.5.2",
-    "globals": "^17.3.0",
-    "jest": "^30.0.4",
-    "jest-environment-jsdom": "^30.0.4",
-    "prettier": "^3.8.1"
+    "eslint-plugin-jsdoc": "^63.0.10",
+    "globals": "^17.7.0",
+    "jest": "^30.4.2",
+    "jest-environment-jsdom": "^30.4.1",
+    "prettier": "^3.9.0"
   },
   "scripts": {
     "jest": "yarn node --experimental-vm-modules $(yarn bin jest packages/**/*.spec.js)",
     "lint": "scripts/lint.sh"
   },
   "type": "module",
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "packageManager": "yarn@4.17.0"
 }
