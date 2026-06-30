@@ -29,12 +29,11 @@ describe('cfpb-analytics', () => {
 
   describe('.analyticsSendEvent()', () => {
     it('should properly add objects to the dataLayer array', async () => {
-      let UNDEFINED;
       const payload = {
         event: 'Page Interaction',
         action: 'inbox:clicked',
         label: 'text:null',
-        eventCallback: UNDEFINED,
+        eventCallback: undefined,
         eventTimeout: 500,
       };
 
