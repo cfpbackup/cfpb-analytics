@@ -23,17 +23,18 @@
   ],
   "devDependencies": {
     "@eslint/js": "10.0.1",
+    "@vitest/coverage-v8": "4.1.9",
     "eslint": "10.6.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-import": "2.32.0",
     "eslint-plugin-jsdoc": "63.0.10",
     "globals": "17.7.0",
-    "jest": "30.4.2",
-    "jest-environment-jsdom": "30.4.1",
-    "prettier": "3.9.0"
+    "jsdom": "29.1.1",
+    "prettier": "3.9.0",
+    "vitest": "4.1.9"
   },
   "scripts": {
-    "jest": "yarn node --experimental-vm-modules $(yarn bin jest packages/**/*.spec.js)",
+    "test": "vitest run",
     "lint": "scripts/lint.sh"
   },
   "type": "module",

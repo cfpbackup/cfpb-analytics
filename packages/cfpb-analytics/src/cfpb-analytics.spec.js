@@ -1,5 +1,3 @@
-import { jest } from '@jest/globals';
-
 describe('cfpb-analytics', () => {
   let analyticsSendEvent;
   beforeEach(() => {
@@ -23,7 +21,7 @@ describe('cfpb-analytics', () => {
 
     return import('./cfpb-analytics.js').then((module) => {
       analyticsSendEvent = module.analyticsSendEvent;
-      jest.resetModules();
+      vi.resetModules();
     });
   });
 
@@ -61,9 +59,9 @@ describe('cfpb-analytics', () => {
       const payload = {
         action: 'inbox:clicked',
         label: 'text:null',
-        eventCallback: jest.fn(),
+        eventCallback: vi.fn(),
       };
-      const callbackSpy = jest.spyOn(payload, 'eventCallback');
+      const callbackSpy = vi.spyOn(payload, 'eventCallback');
       window.dataLayer.push({
         'gtm.start': true,
         'gtm.uniqueEventId': true,
@@ -76,9 +74,9 @@ describe('cfpb-analytics', () => {
       const payload = {
         action: 'inbox:clicked',
         label: 'text:null',
-        eventCallback: jest.fn(),
+        eventCallback: vi.fn(),
       };
-      const callbackSpy = jest.spyOn(payload, 'eventCallback');
+      const callbackSpy = vi.spyOn(payload, 'eventCallback');
       delete window['dataLayer'];
       await analyticsSendEvent(payload);
       expect(callbackSpy).toHaveBeenCalledTimes(1);
@@ -88,9 +86,9 @@ describe('cfpb-analytics', () => {
       const payload = {
         action: 'inbox:clicked',
         label: 'text:null',
-        eventCallback: jest.fn(),
+        eventCallback: vi.fn(),
       };
-      const callbackSpy = jest.spyOn(payload, 'eventCallback');
+      const callbackSpy = vi.spyOn(payload, 'eventCallback');
       delete window['dataLayer'];
       analyticsSendEvent(payload).then(async () => {
         window['dataLayer'] = [];
