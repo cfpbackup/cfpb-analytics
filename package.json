@@ -23,17 +23,17 @@
   ],
   "devDependencies": {
     "@eslint/js": "10.0.1",
-    "@vitest/coverage-v8": "4.1.9",
-    "eslint": "10.6.0",
+    "@vitest/coverage-v8": "4.1.11",
+    "eslint": "10.9.1",
     "eslint-config-prettier": "10.1.8",
     "eslint-import-resolver-typescript": "4.4.5",
     "eslint-plugin-import": "2.32.0",
-    "eslint-plugin-jsdoc": "63.0.10",
-    "globals": "17.7.0",
-    "jsdom": "29.1.1",
-    "prettier": "3.9.1",
+    "eslint-plugin-jsdoc": "64.3.2",
+    "globals": "17.11.0",
+    "jsdom": "30.0.1",
+    "prettier": "3.9.6",
     "typescript": "6.0.3",
-    "vitest": "4.1.9"
+    "vitest": "4.1.11"
   },
   "scripts": {
     "test": "vitest run",
